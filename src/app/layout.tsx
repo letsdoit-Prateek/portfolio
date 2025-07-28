@@ -30,17 +30,17 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Prateek",
-      url: "https://toukoum.fr",
+      // url: "https://toukoum.fr",
     },
   ],
   creator: "Toukoum",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://toukoum.fr",
-    title: "Toukoum Portfolio",
+    // url: "https://toukoum.fr",
+    title: "Prateek Portfolio",
     description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    siteName: "Toukoum Portfolio",
+    siteName: "Prateek Portfolio",
   },
   twitter: {
     card: "summary_large_image",
