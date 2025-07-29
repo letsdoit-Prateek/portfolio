@@ -43,9 +43,9 @@ export function Presentation() {
 
   return (
     <div className="mx-auto w-full max-w-5xl py-6 font-sans">
-      <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+      <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2 md:items-center">
         {/* Image section */}
-        <div className="relative mx-auto aspect-square w-full max-w-sm">
+        <div className="relative mx-auto aspect-square w-full max-w-sm md:order-first">
           <div className="relative h-full w-full overflow-hidden rounded-2xl">
             <motion.div
               initial={{ scale: 0.92, opacity: 0 }}
@@ -70,7 +70,7 @@ export function Presentation() {
         </div>
 
         {/* Text content section */}
-        <div className="flex flex-col space-y">
+        <div className="flex flex-col space-y-6 text-center md:text-left">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -79,7 +79,7 @@ export function Presentation() {
             <h1 className="from-foreground to-muted-foreground bg-gradient-to-r bg-clip-text text-xl font-semibold text-transparent md:text-3xl">
               {profile.name}
             </h1>
-            <div className="mt-1 flex flex-col gap-1 md:flex-row md:items-center md:gap-4">
+            <div className="mt-1 flex flex-col gap-1 justify-center md:justify-start md:flex-row md:items-center md:gap-4">
               <p className="text-muted-foreground">{profile.age}</p>
               <div className="bg-border hidden h-1.5 w-1.5 rounded-full md:block" />
               <p className="text-muted-foreground">{profile.location}</p>
@@ -90,7 +90,7 @@ export function Presentation() {
             initial="hidden"
             animate="visible"
             variants={paragraphAnimation}
-            className="text-foreground mt-6 leading-relaxed whitespace-pre-line"
+            className="text-foreground mt-6 leading-relaxed whitespace-pre-line text-center md:text-left"
           >
             {profile.description}
           </motion.p>
@@ -100,7 +100,7 @@ export function Presentation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
-            className="mt-4 flex flex-wrap gap-2"
+            className="mt-4 flex flex-wrap gap-2 justify-center md:justify-start"
           >
             {['Senior Software Engineer', 'React Native Expert', 'Azure Cloud', 'Full-Stack', 'India'].map(
               (tag) => (
