@@ -94,7 +94,6 @@ const questionsByCategory = [
     icon: GraduationCapIcon,
     questions: [
       'What are your skills?',
-      'How was your experience at École 42?',
     ],
   },
   {
