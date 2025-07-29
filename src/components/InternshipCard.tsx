@@ -32,7 +32,7 @@ const InternshipCard = () => {
               Prateek Chaudhary
             </h2>
             <p className="text-muted-foreground text-sm">
-              Full-Stack Developer & AI Engineer
+              Senior Software Engineer
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ const InternshipCard = () => {
           <div>
             <p className="text-foreground text-sm font-medium">Availability</p>
             <p className="text-muted-foreground text-sm">
-              From August 2025 – Open to full-time, contract, or consulting
+              Available for new opportunities – Full-time or contract work
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ const InternshipCard = () => {
           <div>
             <p className="text-foreground text-sm font-medium">Location</p>
             <p className="text-muted-foreground text-sm">
-              Gurugram, Bangalore, Pune, or Remote-first 🌏
+              Hyderabad, Bangalore, Mumbai, or Remote 🇮�
             </p>
           </div>
         </div>
@@ -76,16 +76,16 @@ const InternshipCard = () => {
             <p className="text-foreground text-sm font-medium">Tech stack</p>
             <div className="text-muted-foreground grid grid-cols-1 gap-y-1 text-sm sm:grid-cols-2">
               <ul className="list-disc pl-4">
-                <li>Next.js, React, Tailwind CSS, TypeScript</li>
-                <li>Node.js, Supabase, Prisma, Azure</li>
-                <li>PostgreSQL, Redis, Docker</li>
-                <li>CI/CD, GitHub Actions, GCP</li>
+                <li>React Native, React.js, Next.js, TypeScript</li>
+                <li>Node.js, Express, MongoDB, SQL Server</li>
+                <li>Azure Functions, Azure Service Bus</li>
+                <li>CI/CD, GitHub Actions, Git</li>
               </ul>
               <ul className="list-disc pl-4">
-                <li>OpenAI, Claude, Groq, Whisper</li>
-                <li>Prompt Engineering, Tool routing</li>
-                <li>Vector DBs: Weaviate, Pinecone</li>
-                <li>LLM apps, RAG, HuggingFace</li>
+                <li>React Native Mobile Development</li>
+                <li>Microservices Architecture</li>
+                <li>Azure Cloud Solutions</li>
+                <li>Payment Gateway Integration</li>
                 <li>
                   <a
                     href="/chat?query=What%20are%20your%20skills%3F%20Give%20me%20a%20list%20of%20your%20soft%20and%20hard%20skills."
@@ -106,10 +106,7 @@ const InternshipCard = () => {
           What I bring
         </p>
         <p className="text-foreground text-sm">
-          4+ years of full-stack experience. Currently building mobile & web
-          apps at Invest4Edu. Hands-on AI projects, toolchains, and platform
-          infra. Built internal dashboards, CI/CD flows, and scalable APIs. Known
-          for clear communication, clean design, and strong ownership.
+          4+ years of experience in product-based startups building scalable systems and mobile-first solutions across React Native, Node.js, and Azure. Currently working as Senior Software Engineer at Invest4Edu, building cross-platform mobile apps and microservices. Known for end-to-end ownership, modern architecture, and driving productivity gains through innovative solutions.
         </p>
       </div>
 
@@ -117,9 +114,7 @@ const InternshipCard = () => {
       <div className="mt-8">
         <p className="text-foreground mb-2 text-lg font-semibold">Goal</p>
         <p className="text-foreground text-sm">
-          Join a high-impact product team where I can build tools people love. I
-          want to scale fast, push limits, and contribute deeply to AI-driven or
-          platform-level experiences.
+          Looking to join a high-impact product team where I can build scalable solutions that users love. I want to leverage my experience in mobile development, cloud architecture, and system optimization to contribute to meaningful projects and continue growing as a technology leader.
         </p>
       </div>
 

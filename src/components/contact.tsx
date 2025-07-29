@@ -9,31 +9,20 @@ export function Contact() {
   const contactInfo = {
     name: 'Prateek Chaudhary',
     email: 'prateekch1999@gmail.com',
-    handle: '@Prateek.Chaudhary',
+    phone: '+91-8433067195',
+    handle: '@prateek-1812',
     socials: [
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/prateek-chaudhary/',
+        url: 'https://www.linkedin.com/in/prateek-1812/',
       },
       {
-        name: 'Youtube',
-        url: 'https://www.youtube.com/@toukoum',
+        name: 'GitHub',
+        url: 'https://github.com/prateekchaudhary',
       },
       {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/prateek.chaudhary/',
-      },
-      {
-        name: 'Discord',
-        url: 'https://discord.com/users/toukoum',
-      },
-      {
-        name: 'Github',
-        url: 'https://github.com/toukoum',
-      },
-      {
-        name: 'X',
-        url: 'https://x.com/toukoumcode',
+        name: 'Email',
+        url: 'mailto:prateekch1999@gmail.com',
       },
     ],
   };

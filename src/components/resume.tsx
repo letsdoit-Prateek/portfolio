@@ -9,9 +9,9 @@ export function Resume() {
   // Resume details
   const resumeDetails = {
     title: "Prateek Chaudhary's Resume",
-    description: 'Full Stack Developer • AI Specialist',
+    description: 'Senior Software Engineer • React Native Expert • Cloud Solutions',
     fileType: 'PDF',
-    lastUpdated: 'March 2025',
+    lastUpdated: 'January 2025',
     fileSize: '0.5 MB',
     previewImageSrc: '/resume_giraud_preview.png',
     downloadUrl: '/resume_prateek.pdf',

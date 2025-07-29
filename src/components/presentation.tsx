@@ -9,9 +9,9 @@ export function Presentation() {
   const profile = {
   name: 'Prateek Chaudhary',
   age: '25 years old',
-  location: 'India 🇮🇳',
+  location: 'Uttar Pradesh, India 🇮🇳',
   description:
-    "Hey 👋\nI'm Prateek, a full-stack developer with 3.5+ years of experience. I lead mobile app development at Invest4Edu and work across React, Node, Azure, and AI systems. I'm passionate about building scalable products, clean architecture, and solving real-world problems through tech. Outside of code, you'll find me diving into books, music, or deep meditation.",
+    "Hey 👋\nI'm Prateek, a Senior Software Engineer with 4+ years of experience in product-based startups. I currently lead mobile app development at Invest4Edu, building scalable systems across React Native, Node.js, and Azure. I'm passionate about creating impactful tech solutions, clean architecture, and driving productivity through GenAI-powered workflows. Outside of coding, you'll find me exploring new technologies, reading, or enjoying good food.",
   src: '/profile-prateek.png',
   fallbackSrc:
     'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',
@@ -102,7 +102,7 @@ export function Presentation() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mt-4 flex flex-wrap gap-2"
           >
-            {['AI', 'Developer', '42 Paris', 'Sport', 'SaaS Builder'].map(
+            {['Senior Software Engineer', 'React Native Expert', 'Azure Cloud', 'Full-Stack', 'India'].map(
               (tag) => (
                 <span
                   key={tag}
