@@ -28,7 +28,7 @@ const PROJECT_CONTENT = [
     links: [
       {
         name: 'Live Demo',
-        url: 'https://prateek-portfolio.azurewebsites.net',
+        url: 'https://portfolio-rho-seven-56.vercel.app/',
       },
       {
         name: 'GitHub',
@@ -46,6 +46,14 @@ const PROJECT_CONTENT = [
       },
       {
         src: '/oldport2.png',
+        alt: 'AI chat interface with personalized responses',
+      },
+      {
+        src: '/oldport3.png',
+        alt: 'AI chat interface with personalized responses',
+      },
+      {
+        src: '/oldport4.png',
         alt: 'AI chat interface with personalized responses',
       },
       {
