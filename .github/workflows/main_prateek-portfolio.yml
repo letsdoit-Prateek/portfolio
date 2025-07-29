@@ -26,9 +26,11 @@ jobs:
       - name: Create deployment package for standalone
         run: |
           mkdir deploy
+          # Create necessary directory structure
+          mkdir -p deploy/.next
           # Copy the standalone output
           cp -r .next/standalone/* deploy/
-          # Copy static files
+          # Copy static files (create .next directory first if it doesn't exist from standalone)
           cp -r .next/static deploy/.next/static
           # Copy public folder
           cp -r public deploy/public
