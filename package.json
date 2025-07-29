@@ -9,7 +9,6 @@
     "start:standalone": "node server.js",
     "lint": "next lint"
   },
-  "packageManager": "pnpm@8.15.6",
   "dependencies": {
     "@ai-sdk/openai": "^1.2.7",
     "@ai-sdk/react": "^1.2.0",

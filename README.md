@@ -27,7 +27,7 @@ Want to run this project locally? Here's what you need:
 
 ### Prerequisites
 - **Node.js** (v18 or higher)
-- **pnpm** package manager
+- **npm** package manager
 - **OpenAI API token** (for AI chat functionality)
 - **GitHub token** (for GitHub integration features)
 
@@ -40,7 +40,7 @@ Want to run this project locally? Here's what you need:
 
 2. **Install dependencies**
    ```bash
-   pnpm install
+   npm install
    ```
 
 3. **Environment variables**
@@ -52,7 +52,7 @@ Want to run this project locally? Here's what you need:
 
 4. **Run the development server**
    ```bash
-   pnpm dev
+   npm run dev
    ```
 
 5. **Open your browser**
@@ -69,10 +69,10 @@ This project is configured for standalone deployment with optimized production b
 ### Build for Production
 ```bash
 # Build the standalone application
-pnpm run build
+npm run build
 
 # Run the standalone server
-pnpm run start:standalone
+npm run start:standalone
 ```
 
 ### Docker Deployment
@@ -98,6 +98,24 @@ The project includes:
 - `ecosystem.config.js` - PM2 configuration
 - `startup.sh` - Azure startup script
 
+## 🔧 **Available Scripts:**
+```bash
+# Development
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server (regular)
+npm start
+
+# Start standalone server (recommended for production)
+npm run start:standalone
+
+# Docker deployment
+docker build -t prateek-portfolio .
+docker run -p 3000:3000 prateek-portfolio
+```
 
 
 #### 🔖 Tags

@@ -17,16 +17,11 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8.15.6
-
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm install --force
 
       - name: Build Next.js standalone
-        run: pnpm run build
+        run: npm run build
 
       - name: Create deployment package for standalone
         run: |
