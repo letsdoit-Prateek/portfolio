@@ -15,20 +15,40 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '22.x'
+          node-version: '18.x'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.15.6
 
       - name: Install dependencies
-        run: npm install --force
+        run: pnpm install --frozen-lockfile
 
-      - name: Build Next.js
-        run: npm run build
+      - name: Build Next.js standalone
+        run: pnpm run build
 
-      - name: Create deployment package
+      - name: Create deployment package for standalone
         run: |
           mkdir deploy
-          cp -r .next public package.json node_modules deploy/
-          cp -r next.config.js deploy/ || true
-          cp -r ecosystem.config.js deploy/ || true
+          # Copy the standalone output
+          cp -r .next/standalone/* deploy/
+          # Copy static files
+          cp -r .next/static deploy/.next/static
+          # Copy public folder
+          cp -r public deploy/public
+          # Copy custom server.js if exists
+          cp server.js deploy/ || true
+          # Copy web.config for Azure App Service
+          cp web.config deploy/ || true
+          # Copy ecosystem.config.js for PM2
+          cp ecosystem.config.js deploy/ || true
+          # Copy startup script
+          cp startup.sh deploy/ || true
+          # Copy package.json for Azure to understand the app
+          cp package.json deploy/
+          # Make startup script executable
+          chmod +x deploy/startup.sh || true
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

@@ -8,6 +8,15 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   output: "standalone",
+  // Optimize for production deployment
+  experimental: {
+    // Enable SWC minification for better performance
+    swcMinify: true,
+  },
+  // Ensure proper asset prefix for standalone builds
+  trailingSlash: false,
+  // Configure for Azure deployment
+  poweredByHeader: false,
 };
 
 module.exports = nextConfig;

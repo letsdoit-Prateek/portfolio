@@ -62,6 +62,42 @@ Want to run this project locally? Here's what you need:
 - **OpenAI API Key**: Get it from [platform.openai.com](https://platform.openai.com/api-keys)
 - **GitHub Token**: Generate one at [github.com/settings/tokens](https://github.com/settings/personal-access-tokens) with repo access
 
+## 🏗️ Standalone Deployment
+
+This project is configured for standalone deployment with optimized production builds.
+
+### Build for Production
+```bash
+# Build the standalone application
+pnpm run build
+
+# Run the standalone server
+pnpm run start:standalone
+```
+
+### Docker Deployment
+```bash
+# Build Docker image
+docker build -t prateek-portfolio .
+
+# Run Docker container
+docker run -p 3000:3000 -e NODE_ENV=production prateek-portfolio
+```
+
+### Azure App Service Deployment
+The project includes:
+- **web.config** for IIS integration
+- **ecosystem.config.js** for PM2 process management
+- **startup.sh** for Azure App Service startup
+- **GitHub Actions workflow** for automated deployment
+
+### Files for Deployment
+- `server.js` - Custom Node.js server for standalone mode
+- `Dockerfile` - Container configuration
+- `web.config` - Azure App Service configuration
+- `ecosystem.config.js` - PM2 configuration
+- `startup.sh` - Azure startup script
+
 
 
 #### 🔖 Tags
