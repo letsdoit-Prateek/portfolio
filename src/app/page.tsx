@@ -20,7 +20,7 @@ import { useEffect, useRef, useState } from 'react';
 /* ---------- quick-question data ---------- */
 const questions = {
   Me: 'Who are you? I want to know more about you.',
-  Projects: 'What are your projects? What are you working on right now?',
+  Projects: 'Tell me about your AI Portfolio project and the technologies you used.',
   Skills: 'What are your skills? Give me a list of your soft and hard skills.',
   Contact: 'How can I contact you?',
 } as const;

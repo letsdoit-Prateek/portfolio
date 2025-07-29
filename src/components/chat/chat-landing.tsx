@@ -17,7 +17,7 @@ const ChatLanding: React.FC<ChatLandingProps> = ({ submitQuery }) => {
     },
     {
       icon: <Code className="h-4 w-4" />,
-      text: 'What projects have you worked on?',
+      text: 'Tell me about your AI Portfolio project.',
     },
     {
       icon: <Award className="h-4 w-4" />,
