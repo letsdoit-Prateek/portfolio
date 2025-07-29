@@ -1,18 +1,10 @@
-name: Build and deploy Next.js app to Azure Web App - prateek-portfolio
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
@@ -20,20 +12,21 @@ jobs:
       - name: Install dependencies
         run: npm install --force
 
-      - name: Build app
+      - name: Build Next.js
         run: npm run build
 
-      - name: Copy necessary files for deployment
+      - name: Create deployment package
         run: |
           mkdir deploy
           cp -r .next public package.json node_modules deploy/
-          echo '{}' > deploy/.env.production.local # Or your real env vars
+          cp -r next.config.js deploy/ || true
+          cp -r ecosystem.config.js deploy/ || true
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: next-app
-          path: deploy/
+          name: nextjs-app
+          path: deploy
 
   deploy:
     runs-on: ubuntu-latest
@@ -42,7 +35,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: next-app
+          name: nextjs-app
 
       - name: Login to Azure
         uses: azure/login@v2
@@ -55,5 +48,4 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'prateek-portfolio'
-          slot-name: 'Production'
           package: .
