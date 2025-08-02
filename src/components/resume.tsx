@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDownToLine, Download, Eye, File } from 'lucide-react';
 import Image from 'next/image';
+import { trackDownload, trackButtonClick } from './GoogleAnalytics';
 
 export function Resume() {
   // Resume details
@@ -18,6 +19,10 @@ export function Resume() {
   };
 
   const handleDownload = () => {
+    // Track the download event
+    trackDownload('resume_prateek.pdf');
+    trackButtonClick('Resume Download', 'Resume Section');
+    
     // Create a link element
     const link = document.createElement('a');
     link.href = resumeDetails.downloadUrl;

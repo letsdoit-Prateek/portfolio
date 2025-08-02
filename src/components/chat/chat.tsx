@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import { useSearchParams } from 'next/navigation';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { toast } from 'sonner';
+import { trackChatInteraction } from '../GoogleAnalytics';
 
 // Component imports
 import ChatBottombar from '@/components/chat/chat-bottombar';
@@ -254,6 +255,10 @@ const Chat = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (!input.trim() || isToolInProgress) return;
+    
+    // Track chat interaction
+    trackChatInteraction('message_sent', input.slice(0, 50)); // First 50 chars for context
+    
     submitQuery(input);
     setInput('');
   };

@@ -1,17 +1,30 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['images.unsplash.com', 'assets.aceternity.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.aceternity.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
   eslint: {
     // Ne bloque PAS le build en cas d'erreurs eslint
     ignoreDuringBuilds: true,
   },
-  output: "standalone",
+  // output: "standalone",
   // Optimize for production deployment
   experimental: {
-    // Enable SWC minification for better performance
-    swcMinify: true,
+    // swcMinify is now enabled by default in Next.js 13+
+    // Removed deprecated swcMinify option
   },
   // Ensure proper asset prefix for standalone builds
   trailingSlash: false,
@@ -19,4 +32,4 @@ const nextConfig = {
   poweredByHeader: false,
 };
 
-module.exports = nextConfig;
+export default nextConfig;

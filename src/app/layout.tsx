@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { PageViewTracker } from "@/components/PageViewTracker";
 import "./globals.css";
 
 // Load Inter font for non-Apple devices
@@ -82,12 +84,14 @@ export default function RootLayout({
           defaultTheme="light"
           enableSystem={false}
         >
+          <PageViewTracker />
           <main className="flex min-h-screen flex-col">
             {children}
           </main>
           <Toaster />
         </ThemeProvider>
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );
