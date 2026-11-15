@@ -18,7 +18,7 @@ export function Contact() {
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/prateekchaudhary',
+        url: 'https://github.com/letsdoit-Prateek',
       },
       {
         name: 'Email',

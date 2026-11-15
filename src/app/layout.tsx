@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       // url: "https://toukoum.fr",
     },
   ],
-  creator: "Toukoum",
+  creator: "Prateek Chaudhary",
   openGraph: {
     type: "website",
     locale: "en_US",
