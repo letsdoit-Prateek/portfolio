@@ -10,27 +10,34 @@ export const getSkills = tool({
 Here's a snapshot of my skill set 👇
 
 🧑‍💻 **Frontend**  
-- React.js, Next.js, Tailwind CSS, Redux, React Native  
+- React.js, Next.js, React Native, Vue.js, TypeScript, Redux, Tailwind CSS, Material UI, HTML/CSS
 - Responsive UI, Component architecture, Performance optimization
 
 🛠️ **Backend**  
-- Node.js, Express.js, Firebase Functions  
+- Node.js, Express.js, Python, Firebase Functions
 - RESTful APIs, Authentication, Microservices, Webhooks
 
 🗃️ **Databases**  
 - SQL Server, MongoDB, Firebase Realtime DB, Azure Blob Storage
 
 ☁️ **Cloud & DevOps**  
-- Microsoft Azure (App Services, Blob Storage, Functions, Pipelines)  
+- Microsoft Azure (App Services, Blob Storage, Functions, Service Bus, Pipelines)
 - GitHub Actions, CI/CD, Docker, Redis, Fastlane (for mobile)
 
 📱 **Mobile Development**  
 - Advanced React Native (iOS & Android)  
 - Push Notifications, Deep Linking, Navigation, Offline Caching, Error Logging
+- Real-time chat (Mattermost), Infinite-scroll video feeds
+
+📊 **Analytics & Monitoring**
+- Firebase, PostHog, Sentry, WebEngage, Google Analytics, Microsoft Clarity
 
 🧠 **AI & Tools**  
 - GPT-4, RAG, AI agent orchestration  
-- Prompt Engineering, LangChain (basic), OpenAI API
+- Prompt Engineering, GenAI code assistance, LangChain (basic), OpenAI API
+
+🧰 **Tools**
+- Git, Jira, Azure Boards, Postman
 
 🧑‍💼 **Professional Skills**  
 - Team leadership, Agile methodologies, Product mindset, Cross-functional collaboration  

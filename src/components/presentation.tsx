@@ -11,7 +11,7 @@ export function Presentation() {
   age: '25 years old',
   location: 'Uttar Pradesh, India 🇮🇳',
   description:
-    "Hey 👋\nI'm Prateek, a Senior Software Engineer with 4+ years of experience in product-based startups. I currently lead mobile app development at Invest4Edu, building scalable systems across React Native, Node.js, and Azure. I'm passionate about creating impactful tech solutions, clean architecture, and driving productivity through GenAI-powered workflows. Outside of coding, you'll find me exploring new technologies, reading, or enjoying good food.",
+    "Hey 👋\nI'm Prateek, a Senior Software Engineer with 5+ years in product-based startups, building scalable web and mobile products with React, Next.js, React Native, Node.js, SQL and Azure. I own features end to end and have driven 25%+ productivity gains through GenAI-powered development workflows, while shipping analytics, payments and real-time chat features. Outside of coding, you'll find me exploring new technologies, reading, or enjoying good food.",
   src: '/profile-prateek.png',
   fallbackSrc:
     'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',

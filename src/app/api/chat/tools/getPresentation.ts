@@ -8,7 +8,7 @@ export const getPresentation = tool({
   execute: async () => {
     return {
       presentation:
-        "I'm Prateek Chaudhary — a full-stack developer with 3.5+ years of experience, currently leading mobile development at Invest4Edu. I specialize in building high-performance web and mobile applications, integrating AI workflows, and optimizing cloud infrastructure (especially on Azure).\n\nI’m deeply passionate about clean architecture, intuitive UX, and products that solve real-world problems. Beyond code, I enjoy music, meditation, and getting lost in great books.\n\nEngineer. Problem Solver. Builder at heart. 🚀",
+        "I'm Prateek Chaudhary — a Senior Software Engineer with 5+ years in product-based startups (most recently Binaried Technology and Shoppin). I build scalable web and mobile products with React, Next.js, React Native, Node.js, SQL and Azure, own features end to end, and have driven 25%+ productivity gains through GenAI-powered development workflows while shipping analytics, payments and real-time chat features.\n\nI’m deeply passionate about clean architecture, intuitive UX, and products that solve real-world problems. Beyond code, I enjoy music, meditation, and getting lost in great books.\n\nEngineer. Problem Solver. Builder at heart. 🚀",
     };
   },
 });

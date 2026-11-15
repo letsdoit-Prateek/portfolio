@@ -9,7 +9,7 @@ export const getResume = tool({
     return `
 Here's my resume 👇
 
-📄 [Download Resume](https://yourdomain.com/prateek-resume.pdf)
+📄 [Download Resume](/resume_prateek.pdf)
 
 Feel free to reach out if you'd like to discuss opportunities or collaborations!
     `.trim();

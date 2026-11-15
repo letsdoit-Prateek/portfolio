@@ -3,7 +3,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
-import { Code, Cpu, Cloud, Users, Smartphone, Brain } from 'lucide-react';
+import { Code, Cpu, Cloud, Users, Smartphone, Brain, BarChart3 } from 'lucide-react';
 
 const Skills = () => {
   const skillsData = [
@@ -18,6 +18,8 @@ const Skills = () => {
       'Next.js',
       'Tailwind CSS',
       'Redux',
+      'Vue.js',
+      'Material UI',
       'Bootstrap',
       'GSAP',
     ],
@@ -29,6 +31,7 @@ const Skills = () => {
     skills: [
       'Node.js',
       'Express.js',
+      'Python',
       'REST APIs',
       'Firebase Functions',
       'SQL Server',
@@ -49,6 +52,8 @@ const Skills = () => {
       'Navigation Architecture',
       'Offline Caching',
       'Error Logging',
+      'Real-time Chat (Mattermost)',
+      'Infinite-scroll Video Feeds',
       'Fastlane',
     ],
     color: 'bg-yellow-50 text-yellow-600 border border-yellow-200',
@@ -57,14 +62,29 @@ const Skills = () => {
     category: 'Cloud & DevOps',
     icon: <Cloud className="h-5 w-5" />,
     skills: [
-      'Microsoft Azure (App Services, Blob, Functions, Pipelines)',
+      'Microsoft Azure (App Services, Blob, Functions, Service Bus, Pipelines)',
       'CI/CD (GitHub Actions)',
       'Docker',
       'Redis',
       'Firebase',
       'Git & GitHub',
+      'Jira & Azure Boards',
+      'Postman',
     ],
     color: 'bg-cyan-50 text-cyan-600 border border-cyan-200',
+  },
+  {
+    category: 'Analytics & Monitoring',
+    icon: <BarChart3 className="h-5 w-5" />,
+    skills: [
+      'Firebase Analytics',
+      'PostHog',
+      'Sentry',
+      'WebEngage',
+      'Google Analytics',
+      'Microsoft Clarity',
+    ],
+    color: 'bg-rose-50 text-rose-600 border border-rose-200',
   },
   {
     category: 'AI & Modern Stack',

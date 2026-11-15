@@ -64,7 +64,7 @@ const InternshipCard = () => {
           <div>
             <p className="text-foreground text-sm font-medium">Location</p>
             <p className="text-muted-foreground text-sm">
-              Hyderabad, Bangalore, Mumbai, or Remote 🇮�
+              Noida, Delhi, Gurugram, Hyderabad, Bangalore, Pune, or Remote 🇮🇳
             </p>
           </div>
         </div>
@@ -86,6 +86,8 @@ const InternshipCard = () => {
                 <li>Microservices Architecture</li>
                 <li>Azure Cloud Solutions</li>
                 <li>Payment Gateway Integration</li>
+                <li>Analytics &amp; Monitoring (Firebase, PostHog, Sentry)</li>
+                <li>Real-time Chat (Mattermost)</li>
                 <li>
                   <a
                     href="/chat?query=What%20are%20your%20skills%3F%20Give%20me%20a%20list%20of%20your%20soft%20and%20hard%20skills."
@@ -106,7 +108,7 @@ const InternshipCard = () => {
           What I bring
         </p>
         <p className="text-foreground text-sm">
-          4+ years of experience in product-based startups building scalable systems and mobile-first solutions across React Native, Node.js, and Azure. Currently working as Senior Software Engineer at Invest4Edu, building cross-platform mobile apps and microservices. Known for end-to-end ownership, modern architecture, and driving productivity gains through innovative solutions.
+          5+ years in product-based startups (Binaried Technology, Shoppin, Invest4Edu, Labridge, Speedlabs) building scalable web and mobile products with React, Next.js, React Native, Node.js, SQL and Azure. Known for end-to-end ownership, 25%+ productivity gains through GenAI-powered workflows, and shipping analytics, payments and real-time chat features.
         </p>
       </div>
 
